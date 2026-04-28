@@ -586,10 +586,10 @@ function calculateBill(e){
 let total = 0;
 
 let categories = {
-"Preschool":((+e.nursery||0)+(+e.kg1||0)+(+e.kg2||0))*8,
-"Lower Primary":((+e.b1||0)+(+e.b2||0)+(+e.b3||0))*9,
-"Upper Primary":((+e.b4||0)+(+e.b5||0)+(+e.b6||0))*10,
-"Basic 7 & 8":((+e.b7||0)+(+e.b8||0))*15
+"Preschool":((+e.nursery||0)+(+e.kg1||0)+(+e.kg2||0))*9,
+"Lower Primary":((+e.b1||0)+(+e.b2||0)+(+e.b3||0))*10,
+"Upper Primary":((+e.b4||0)+(+e.b5||0)+(+e.b6||0))*11,
+"Basic 7 & 8":((+e.b7||0)+(+e.b8||0))*17
 };
 
 for(let k in categories) total += categories[k];
